@@ -65,12 +65,12 @@ const checkConfirmPassword = () => {
     return valid;
 };
 const isEmailValid = (email) => {
-    const re = /^\w+([\.-]?w+)*@\w+([\.-]?\w+)*(\.w{2,3})+$/;
+    const re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     return re.test(email);
 };
 
 const isPasswordSecure = (password) => {
-    const re = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?.=*[0-9])(?=.*[!@\$%\^&\*])(?.={8,})");
+    const re = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?.=*[0-9])(?=.*[!@#\$%\^&\*])(?.={8,})");
     return re.test(password);
 };
 
