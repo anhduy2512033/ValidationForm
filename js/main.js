@@ -28,7 +28,7 @@ const checkEmail = () => {
     if(!isRequired(email)){
         showError(emailEl, 'email cannot be blank.');
     } else if(!isEmailValid(email)){
-        showError(emailEl, 'email is not valid.');
+        showError(emailEl, 'Password must has at least 8 characters that include at least 1 lowcase'+'character, 1 uppercase characters, 1 number,and, and 1 special character in (!@#$%^&*).');
     } else {
         showSuccess(emailEl);
         valid = true;
